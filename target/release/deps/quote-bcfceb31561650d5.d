@@ -1,0 +1,13 @@
+/Users/bryan/myepicproject/target/release/deps/quote-bcfceb31561650d5.rmeta: /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/lib.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ext.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/format.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ident_fragment.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/to_tokens.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/runtime.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/spanned.rs
+
+/Users/bryan/myepicproject/target/release/deps/libquote-bcfceb31561650d5.rlib: /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/lib.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ext.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/format.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ident_fragment.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/to_tokens.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/runtime.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/spanned.rs
+
+/Users/bryan/myepicproject/target/release/deps/quote-bcfceb31561650d5.d: /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/lib.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ext.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/format.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ident_fragment.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/to_tokens.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/runtime.rs /Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/spanned.rs
+
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/lib.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ext.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/format.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/ident_fragment.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/to_tokens.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/runtime.rs:
+/Users/bryan/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.15/src/spanned.rs:

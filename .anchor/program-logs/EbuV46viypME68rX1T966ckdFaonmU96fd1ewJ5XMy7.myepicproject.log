@@ -1,0 +1,27 @@
+Streaming transaction logs mentioning EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7. Confirmed commitment
+Transaction executed in slot 119084330:
+  Signature: 2yguTjbsytbwgMxDj2RdFez3SzwRfxsRnkm21ruZPxNy8t55mw2NwiUn1fd2QRdvkjxb6xsvcuF5XLsermzKRo3Y
+  Status: Ok
+  Log Messages:
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 invoke [1]
+    Program log: Instruction: StartStuffOff
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 consumed 9655 of 200000 compute units
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 success
+Transaction executed in slot 119084338:
+  Signature: QC1X3YTRhNZtGwDx3XNAREeDqgqG6m2x7bJP4d14b2FunAZLhHHSKRymipGhoQXcPGwqEwJngiVYYuqo782fshD
+  Status: Ok
+  Log Messages:
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 invoke [1]
+    Program log: Instruction: AddGif
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 consumed 16857 of 200000 compute units
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 success
+Transaction executed in slot 119084345:
+  Signature: 4buMFZCKYktBwvNAmrxMmCfcZcx1ZALV8ErBWXMAjrGUH17Tg2YfuUy64RZWit3D5Vwf9rkpArAVpvM4Q8ym24ii
+  Status: Ok
+  Log Messages:
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 invoke [1]
+    Program log: Instruction: UpvoteGif
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 consumed 5339 of 200000 compute units
+    Program EbuV46viypME68rX1T966ckdFaonmU96fd1ewJ5XMy7 success
