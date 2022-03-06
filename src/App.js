@@ -7,7 +7,7 @@ import './App.css';
 import idl from './idl.json';
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
-import kp from './keypair.json'
+import kp from './keypair.json';
 
 // SystemProgram is a reference to the Solana runtime!
 const { SystemProgram, Keypair } = web3;
@@ -121,7 +121,23 @@ const App = () => {
       console.log("Error sending GIF:", error)
     }
   };
-  
+
+  const upvoteGif = async (id) => {
+    try {
+      const provider = getProvider();
+      const program = new Program(idl, programID, provider);
+
+      await program.rpc.upvoteGif(id, {
+        accounts: {
+          baseAccount: baseAccount.publicKey,
+          user: provider.wallet.publicKey,
+        },
+      });
+      await getGifList();
+    } catch (error) {
+      console.log('Error Upvoting GifID: ', id, error);
+    }
+  }
 
   const onInputChange = (event) => {
     const { value } = event.target;
@@ -140,18 +156,21 @@ const App = () => {
     try {
       const provider = getProvider();
       const program = new Program(idl, programID, provider);
-      console.log("ping")
-      await program.rpc.startStuffOff({
-        accounts: {
-          baseAccount: baseAccount.publicKey,
-          user: provider.wallet.publicKey,
-          systemProgram: SystemProgram.programId,
-        },
-        signers: [baseAccount]
-      });
-      console.log("Created a new BaseAccount w/ address:", baseAccount.publicKey.toString())
+      console.log("ping");
+      if (baseAccount === null) {
+        await program.rpc.startStuffOff({
+          accounts: {
+            baseAccount: baseAccount.publicKey,
+            user: provider.wallet.publicKey,
+            systemProgram: SystemProgram.programId,
+          },
+          signers: [baseAccount]
+        });
+        console.log("Created a new BaseAccount w/ address:", baseAccount.publicKey.toString())
+      }
+      
       await getGifList();
-  
+
     } catch(error) {
       console.log("Error creating BaseAccount account:", error)
     }
@@ -206,6 +225,14 @@ const App = () => {
             {gifList.map((item, index) => (
               <div className="gif-item" key={index}>
                 <img src={item.gifLink} />
+                <button 
+                  type="submit" 
+                  className="cta-button upvote-gif-button"
+                  data={item.id}
+                  onClick={upvote.bind(this, item.id)}
+                >
+                {item.votes.toString()} 👍
+                </button>
               </div>
             ))}
           </div>
@@ -229,6 +256,7 @@ const App = () => {
 
   const getGifList = async() => {
     try {
+      console.log(">>>>", baseAccount)
       const provider = getProvider();
       const program = new Program(idl, programID, provider);
       const account = await program.account.baseAccount.fetch(baseAccount.publicKey);
@@ -240,7 +268,12 @@ const App = () => {
       console.log("Error in getGifList: ", error)
       setGifList(null);
     }
-  }
+  };
+
+  const upvote = async (id) => {
+    console.log('Upvoting GifID: ', id);
+    upvoteGif(id);
+  };
   
   useEffect(() => {
     if (walletAddress) {
@@ -249,16 +282,14 @@ const App = () => {
     }
   }, [walletAddress]);
 
-
-
   return (
     <div className="App">
       {/* This was solely added for some styling fanciness */}
 			<div className={walletAddress ? 'authed-container' : 'container'}>
         <div className="header-container">
-          <p className="header">🖼 Taylor Swift GIF Portal</p>
+          <p className="header">🖼 Solana GIF Portal (Taylor's Version)</p>
           <p className="sub-text">
-            View your Taylor Swift GIF collection in the metaverse ✨
+            View the Taylor Swift GIF collection in the metaverse ✨
           </p>
           {/* Add the condition to show this only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
