@@ -110,6 +110,7 @@
   position: relative;
   justify-self: center;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 .gif-item img {
