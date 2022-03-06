@@ -1,7 +1,14 @@
-# Taylor Swift GIF Portal - A Web3 Project
+# Solana GIF Portal (Taylor's Version)
 
-Connect your Phantom wallet and upload a link of your favourite Taylor Swift GIF!
+**Connect your Phantom wallet then upload and upvote your favourite (not strictly) Taylor Swift GIFs!**
 
-https://user-images.githubusercontent.com/34775928/156343928-dcdab589-068e-4748-8146-c18b4837396a.mp4
+To run app:
+```
+cd app
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run start
+```
 
-Live now on [Heroku](https://taylor-swift-gif-portal.herokuapp.com/).
+![Solana GIF Portal Image](https://user-images.githubusercontent.com/34775928/156920313-eb7ff9cb-b168-412a-b595-7d7672b69e5d.png)
+
+### Live now on [Heroku](https://taylor-swift-gif-portal.herokuapp.com/)
