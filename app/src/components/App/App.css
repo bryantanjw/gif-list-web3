@@ -1,0 +1,25 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  bottom: -80px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-text:hover,
+.footer-text:focus {
+  text-decoration: underline;
+  color: white;
+}

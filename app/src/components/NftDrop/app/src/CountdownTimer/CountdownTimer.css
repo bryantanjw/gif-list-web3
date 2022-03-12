@@ -1,0 +1,9 @@
+.timer-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -60px;
+}
+
+.timer-container .timer-value {
+  font-size: 30px;
+}
