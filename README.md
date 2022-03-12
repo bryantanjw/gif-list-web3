@@ -9,6 +9,6 @@ export NODE_OPTIONS=--openssl-legacy-provider
 npm run start
 ```
 
-![Solana GIF Portal Image](https://user-images.githubusercontent.com/34775928/156920313-eb7ff9cb-b168-412a-b595-7d7672b69e5d.png)
+![gif-portal-demo](https://user-images.githubusercontent.com/34775928/158017196-595a1eec-89c2-4283-b207-71e538751711.png)
 
 ### Live now on [Heroku](https://taylor-swift-gif-portal.herokuapp.com/)
