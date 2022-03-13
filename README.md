@@ -1,6 +1,6 @@
 # Solana GIF Portal (Taylor's Version)
 
-**Connect your Phantom wallet then upload and upvote your favourite (not strictly) Taylor Swift GIFs!**
+**Upload and upvote your favourite (not strictly) Taylor Swift GIFs; mint album cover NFTs 🍭!**
 
 To run app:
 ```
